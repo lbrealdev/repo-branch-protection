@@ -1,0 +1,1 @@
+{ "query": "query GetReposFromOrg($owner: String!) { organization(login: $owner) { id name login description resourcePath createdAt repositories(first: 100, after: null) { nodes { id name } pageInfo { endCursor hasNextPage } } }}" }
